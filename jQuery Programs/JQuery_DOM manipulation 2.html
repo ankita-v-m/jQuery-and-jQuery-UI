@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>jQuery DOM Manipulation 2</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+
+    <body>
+        <h2>jQuery DOM Manipulation 2</h2>
+        <button id="btn1">Set Value</button>
+        <button id="btn2">Get Value</button>
+        <div id="div1" class="mydivs">
+            <p id="p1" class="p1class" value="hello world">This is 3rd <b>paragraph</b> in second division</p>
+        </div>
+    </body>
+
+    <script src="Library/jquery.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#btn1").click(function(){
+
+                //alert($("#p1").attr("class"));
+                //$("#p1").attr("class","p2");
+
+                $("#p1").css("font-size","25");
+            });
+
+            $("#btn2").click(function(){
+
+               // alert($("#p1").attr("class"));
+                //$("#p1").attr("class","p2class");
+
+                alert($("#p1").css("font-size"));
+            });
+
+
+        });
+    </script>
+</html>

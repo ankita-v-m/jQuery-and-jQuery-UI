@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Accordion in jQuery UI</title>
+        <link rel="stylesheet" href="CSS_file/style.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+    </head>
+
+    <body>
+        <h2>Accordion in jQuery</h2>
+        <div id="panels">
+            <h3>Maharashtra</h3>
+            <p>Maharashtra is a state in the western peninsular region of India occupying a substantial portion of the Deccan Plateau.
+            As the home of the Marathi people, Maharashtra is the second-most populous state and third-largest state by area in India. Spread over 307,713 km2 (118,809 sq mi), it is also the world's second-most populous country subdivision. </p>
+
+            <h3>Kerala</h3>
+            <p>Kerala is a state on the southwestern Malabar Coast of India.</p>
+
+            <h3>Rajasthan</h3> 
+            <p>Rajasthan is a state in northern India.</p>
+
+        </div>
+    </body>
+
+    <script src="jquery_Library_File/jquery.js" type="text/javascript"></script>
+    <script src="jquery-ui/jquery-ui.js" type="text/javascript"></script>
+    <script>
+        $("#panels").accordion({
+            collapsible:true,
+            event:"click",  //mouseover
+            animate:300,
+            active:0,
+            heightStyle:true,
+            icons:{header:"ui-icon-plus",activeHeader:"ui-icon-minus"}
+
+        });
+    </script>
+</html>

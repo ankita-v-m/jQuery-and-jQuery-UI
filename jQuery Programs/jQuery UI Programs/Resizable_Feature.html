@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Resizable in jQuery UI</title>
+        <link rel="stylesheet" href="CSS_file/style.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+    </head>
+
+    <body>
+        <h2>Resizable in jQuery UI</h2>
+        <div id="mydivs">
+            <img src="Image/hello_world_image.jpeg" id="resize" alt="" width="200">
+        </div>
+        
+    </body>
+
+    <script src="jquery_Library_File/jquery.js" type="text/javascript"></script>
+    <script src="jquery-ui/jquery-ui.js" type="text/javascript"></script>
+    <script>
+        
+        $("#resize").resizable({
+          //  maxWidth:500,
+          //  maxHeight:500,
+            autoHide:true,
+          //  distance:200,
+            ghost:true,
+            aspectRatio:true
+            
+         });
+    </script>
+</html>

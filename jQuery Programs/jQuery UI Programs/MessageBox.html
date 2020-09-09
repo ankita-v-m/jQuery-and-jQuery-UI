@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Message Box in jQuery UI</title>
+        <link rel="stylesheet" href="CSS_file/style.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+    </head>
+
+    <body>
+        <h2>Message Box in jQuery UI</h2>
+        <div id="firstdiv" class="mydivs">
+            <h3>Hello Welcome</h3>
+            <br>
+            <button id="btn1">Click to show Message Box</button>
+        </div>
+        <br>
+        <div id="messagebox" class="mydivs" title="">
+            <h3>This is dummy title</h3>
+            <img src="hello_world_image.jpeg" width="200px">
+            <br>
+            
+        </div>
+        
+    </body>
+
+    <script src="jquery_Library_File/jquery.js" type="text/javascript"></script>
+    <script src="jquery-ui/jquery-ui.js" type="text/javascript"></script>
+    <script>
+        $("#btn1").click(function(){
+
+            //alert("Button Clicked");
+            $("#messagebox").dialog({
+                title:"Custom Message Box",
+                draggable:false,
+                resizable:true,
+                height:300,
+                width:300,
+                modal:true,    // until you close the message box or perform given action , background options will be disabled
+
+                buttons: [
+                    {
+                        text: "Close",
+                        icon: "ui-icon-heart",
+                        click: function(){
+                            $(this).dialog("close");
+                        }
+                    },
+                    {
+                        text: "Ok",
+                        icon: "ui-icon-heart",
+                        click: function(){
+                            $(this).dialog("close");
+                        }
+                    }
+
+                ]
+
+            });
+        });
+    </script>
+</html>

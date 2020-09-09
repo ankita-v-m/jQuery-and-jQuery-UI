@@ -1,0 +1,55 @@
+#h2tag{
+    color: aqua;
+}
+#firstH2{
+    color: teal;
+}
+.headings{
+    background-color: yellowgreen;
+}
+
+.mydivs{
+    color: seagreen;
+    border: 2px solid blue;
+    margin: 5px;
+    padding: 10px;
+}
+.mycube{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    opacity: 0.4;
+    position: absolute;
+    padding: 20px;
+}
+
+.newdivclass{
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.newparaclass{
+    font-weight: bold;
+    color:green;
+}
+
+#mydivs{
+    border: 2px solid rebeccapurple;
+    padding: 15px;
+}
+.cube{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 20px;
+}
+
+.cube1{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    padding: 20px;
+    margin: 20px;
+   /* display: inline-block; */
+}

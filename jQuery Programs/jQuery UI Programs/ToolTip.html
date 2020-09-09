@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>ToolTip in jQuery UI</title>
+        <link rel="stylesheet" href="CSS_file/style.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+    </head>
+
+    <body>
+        <div id="mydiv">
+            <h2>ToolTip in jQuery UI</h2>
+            <img src="Image/hello_world_image.jpeg" width="200px" title="" id="img">
+        </div>
+        
+    </body>
+
+    <script src="jquery_Library_File/jquery.js" type="text/javascript"></script>
+    <script src="jquery-ui/jquery-ui.js" type="text/javascript"></script>
+    <script>
+        $("img").tooltip({
+
+           // track:true,
+            content:"This is ToolTip",
+            show:{effect:"bounce",duration:2000},       // effect are "pulsate", "Highlight","explode", "blind"
+            hide:{effect:"explode",duration:2000}
+        });
+    </script>
+</html>

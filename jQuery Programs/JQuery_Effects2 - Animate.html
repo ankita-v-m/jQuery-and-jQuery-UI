@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Effects 2</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+
+    <body>
+        <h2>Effects - Animate in jQuery</h2>
+        <button id="btn1">Hide</button>
+        <button id="btn2">Show</button>
+        <button id="btn3">Toggle</button>
+        <button id="btn4">Animate</button>
+
+        <p>Welcome in para</p>
+        <div id="1stDiv" class="mydivs">        <!-- This is 0th position div-->
+            <h2>H2 tag </h2>
+            <p>This is 1st paragraph in 1st division</p>
+            <p>This is 2nd paragraph in 1st division</p>
+        </div>
+        <div id="2ndDiv" class="mydivs">        <!-- This is 1st position div-->
+            <p>This is 3rd paragraph in 2nd division</p>
+            <h3>H3 tag</h3>
+        </div>
+        <div id="3rdDiv" class="mydivs">           <!-- This is 2nd position div-->
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+            </ul>
+        </div>
+
+        <div class="mycube" id="cube">
+            <p>Cube</p>
+        </div>
+
+    </body>
+
+    <script src="Library/jquery.js" type="text/javascript"></script>
+<script>
+
+    $(document).ready(function(){  // this will let the button click operation to be work when whole document is loaded.
+
+       $("#btn1").click(function(){
+
+            $("#1stDiv").hide();
+       });
+       $("#btn2").click(function(){
+
+            $("#1stDiv").show();
+        });
+        $("#btn3").click(function(){
+
+            $("#1stDiv").toggle();
+        });
+
+        $("#btn4").click(function(){
+
+            $("#cube").animate({
+                left:'150px',
+                opacity:'1',
+                width:'100px',
+                height:'100px'
+
+            },1000)
+            
+        });
+        
+    });    
+</script>
+    
+</html>

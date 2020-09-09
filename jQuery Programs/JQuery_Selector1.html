@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>JQuery Selectors</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+
+    <body>
+        <h1>Selectors2 up JQuery</h1>
+        <h2 id="h2tag">Selectors1 up JQuery</h2>
+        <h3 class="headings" id="h3tag">Selectors1 up JQuery</h3>
+        <h4 class="headings" id="h4tag">Selectors1 up JQuery</h4>
+        <h5 class="headings" id="h5tag">Selectors1 up JQuery</h5>
+        <button onclick="f1()" id="btn1">Click</button>
+    </body>
+
+    <script src="Library/jquery.js" type="text/javascript"></script>  
+
+    <script>
+        function f1()
+        {
+            //document.getElementById(); = to access an element using ID in JavaScript
+            $("h1").fadeToggle(1000);           // $("tagname") = selector in JQuery and .action() = method
+            $("#h2tag").fadeToggle(2000);       // "#" for ID,  $("#ID name") = selector in JQuery
+            $(".headings").fadeToggle(4000);   // "." for class  $(".class name") = selector in JQuery
+        }
+    </script>
+</html>

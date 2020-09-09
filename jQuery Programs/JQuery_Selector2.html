@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Selectors 2</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+
+    <body>
+        <p>Welcome</p>
+        <p>Welcome2</p>
+        <div id="1stDiv" class="mydivs">        <!-- This is 0th position div-->
+            <h2>H2 tag </h2>
+            <p>This is 1st paragraph in 1st division</p>
+            <p>This is 2nd paragraph in 1st division</p>
+        </div>
+        <div id="2ndDiv" class="mydivs">        <!-- This is 1st position div-->
+            <p>This is 3rd paragraph in 2nd division</p>
+            <h3>H3 tag</h3>
+        </div>
+        <div id="3rdDiv" class="mydivs">           <!-- This is 2nd position div-->
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+            </ul>
+        </div>
+
+        <div id="4rdDiv">
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+                <li>List item 4</li>
+            </ul>
+        </div>
+
+        <button onclick="fn1()" id="btn1">Click here</button>
+
+    </body>
+
+    <script src="Library/jquery.js" type="text/javascript"></script>
+<script>
+        function fn1()
+        {
+           // $("#1stDiv,p,.mydivs").fadeToggle(1500);
+          // $("div  p").fadeToggle(1500);           // $("parent tag > child tag") to only select child tag
+        //  $("p:first").fadeToggle(1500);            // first tag
+        //  $(".mydivs:first").fadeToggle(1500);            // first class
+        $(".mydivs:even").fadeToggle(1500);            // even class
+
+        }
+</script>
+    
+</html>
